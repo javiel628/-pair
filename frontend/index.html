@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#050910">
+  <title>SHADOW PAIR — WhatsApp Pairing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <main class="shell">
+    <header><div class="brand-mark">亗</div><div><div class="brand">SHADOW <span>PAIR</span></div><small>SECURE WHATSAPP LINKING</small></div></header>
+    <section class="panel">
+      <div class="eyebrow"><i></i> PAIRING PORTAL</div>
+      <h1>Connect your<br><span>WhatsApp</span></h1>
+      <p class="intro">Generate a one-time pairing code for your SHADOW MD session.</p>
+      <label for="number">PHONE NUMBER</label>
+      <div class="phone-wrap"><span>＋</span><input id="number" inputmode="numeric" autocomplete="tel" placeholder="2547XXXXXXXX" maxlength="15"></div>
+      <button id="generate">GENERATE PAIRING CODE <b>↗</b></button>
+      <div id="result" class="result hidden" aria-live="polite">
+        <div class="result-top"><span>PAIRING STATUS</span><span id="status" class="status">WAITING</span></div>
+        <div id="code" class="code">----</div>
+        <p id="message">Preparing your request...</p>
+        <button id="copy" class="secondary hidden">COPY CODE</button>
+        <button id="cancel" class="cancel hidden">CANCEL REQUEST</button>
+      </div>
+      <div class="steps"><div><b>01</b><span>Enter your number with country code.</span></div><div><b>02</b><span>Open WhatsApp → Linked Devices.</span></div><div><b>03</b><span>Choose “Link with phone number” and enter the code.</span></div></div>
+      <p class="notice">Only pair a WhatsApp account you own or are authorized to manage. Never share your pairing code.</p>
+    </section>
+    <footer>POWERED BY <strong>𝐒𝚳𝚰𝐋𝚵 𝚳𝚯𝐃𝐙</strong> <span>© 2026 SHADOW MD</span></footer>
+  </main>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
